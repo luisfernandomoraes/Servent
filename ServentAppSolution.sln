@@ -1,0 +1,97 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.Domain", "Servent.Domain\Servent.Domain.csproj", "{F60AEA30-723A-4A95-95D2-BBCB162F5989}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.DAL", "Servent.DAL\Servent.DAL.csproj", "{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.BLL", "Servent.BLL\Servent.BLL.csproj", "{6EC80244-9010-4B6F-B585-C75127CF6BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.UI", "Servent.UI\Servent.UI.csproj", "{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServentConsoleApplication", "ServentConsoleApplication\ServentConsoleApplication.csproj", "{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.DAL.Configurations", "Servent.DAL.Configurations\Servent.DAL.Configurations.csproj", "{AFCB572C-22D1-4974-9C13-51C2A8B710BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{4F065C50-3AE3-4A28-9A10-4155D983FB95}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Servent.Util", "Servent.Util\Servent.Util.csproj", "{9A923901-0EB7-4D4B-8AEA-3B41C0BED7A7}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://luisfernandomoraes.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Servent.BLL\\Servent.BLL.csproj
+		SccProjectName1 = Servent.BLL
+		SccLocalPath1 = Servent.BLL
+		SccProjectUniqueName2 = Servent.DAL.Configurations\\Servent.DAL.Configurations.csproj
+		SccProjectName2 = Servent.DAL.Configurations
+		SccLocalPath2 = Servent.DAL.Configurations
+		SccProjectUniqueName3 = Servent.DAL\\Servent.DAL.csproj
+		SccProjectName3 = Servent.DAL
+		SccLocalPath3 = Servent.DAL
+		SccProjectUniqueName4 = Servent.Domain\\Servent.Domain.csproj
+		SccProjectName4 = Servent.Domain
+		SccLocalPath4 = Servent.Domain
+		SccProjectUniqueName5 = Servent.UI\\Servent.UI.csproj
+		SccProjectName5 = Servent.UI
+		SccLocalPath5 = Servent.UI
+		SccProjectUniqueName6 = Servent.Util\\Servent.Util.csproj
+		SccProjectName6 = Servent.Util
+		SccLocalPath6 = Servent.Util
+		SccProjectUniqueName7 = ServentConsoleApplication\\ServentConsoleApplication.csproj
+		SccProjectName7 = ServentConsoleApplication
+		SccLocalPath7 = ServentConsoleApplication
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F60AEA30-723A-4A95-95D2-BBCB162F5989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F60AEA30-723A-4A95-95D2-BBCB162F5989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F60AEA30-723A-4A95-95D2-BBCB162F5989}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F60AEA30-723A-4A95-95D2-BBCB162F5989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F60AEA30-723A-4A95-95D2-BBCB162F5989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD0BBCD5-20B3-4BE4-98E0-272A7A40B3B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC80244-9010-4B6F-B585-C75127CF6BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC80244-9010-4B6F-B585-C75127CF6BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC80244-9010-4B6F-B585-C75127CF6BAD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6EC80244-9010-4B6F-B585-C75127CF6BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC80244-9010-4B6F-B585-C75127CF6BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BCE4373-DC6B-4DA7-B49D-FE43F4FD323B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFCB572C-22D1-4974-9C13-51C2A8B710BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFCB572C-22D1-4974-9C13-51C2A8B710BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFCB572C-22D1-4974-9C13-51C2A8B710BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFCB572C-22D1-4974-9C13-51C2A8B710BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A923901-0EB7-4D4B-8AEA-3B41C0BED7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A923901-0EB7-4D4B-8AEA-3B41C0BED7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A923901-0EB7-4D4B-8AEA-3B41C0BED7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A923901-0EB7-4D4B-8AEA-3B41C0BED7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

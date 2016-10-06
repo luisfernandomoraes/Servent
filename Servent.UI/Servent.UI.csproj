@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9C666EB-6E2C-4FE8-AE6D-9FADE13154BE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Servent.UI</RootNamespace>
+    <AssemblyName>Servent.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>construction_firm.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\packages\EntityFramework.6.0.1\lib\net40\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics2.Shared.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.Misc.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinDataSource.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinEditors.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinGrid.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinSchedule.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinStatusBar.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinTabControl.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.UltraWinToolbars.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Infragistics2.Win.v10.1, Version=10.1.20101.1007, Culture=neutral, PublicKeyToken=7dd5c3163f2cd0cb">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\FadeEffect.cs" />
+    <Compile Include="Forms\FormAddMaterialFromStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddMaterialFromStore.Designer.cs">
+      <DependentUpon>FormAddMaterialFromStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddUnitType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddUnitType.Designer.cs">
+      <DependentUpon>FormAddUnitType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddConstruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddConstruction.Designer.cs">
+      <DependentUpon>FormAddConstruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAddMaterials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAddMaterials.Designer.cs">
+      <DependentUpon>FormAddMaterials.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManangerUnits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormManangerUnits.Designer.cs">
+      <DependentUpon>FormManangerUnits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormMovMaterialsToConstruction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormMovMaterialsToConstruction.Designer.cs">
+      <DependentUpon>FormMovMaterialsToConstruction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormServerConfi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormServerConfi.Designer.cs">
+      <DependentUpon>FormServerConfi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSplashScreen.Designer.cs">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormViwerHistoric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormViwerHistoric.Designer.cs">
+      <DependentUpon>FormViwerHistoric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormAddMaterialFromStore.resx">
+      <DependentUpon>FormAddMaterialFromStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddUnitType.resx">
+      <DependentUpon>FormAddUnitType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddConstruction.resx">
+      <DependentUpon>FormAddConstruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAddMaterials.resx">
+      <DependentUpon>FormAddMaterials.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManangerUnits.resx">
+      <DependentUpon>FormManangerUnits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormMovMaterialsToConstruction.resx">
+      <DependentUpon>FormMovMaterialsToConstruction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormServerConfi.resx">
+      <DependentUpon>FormServerConfi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormSplashScreen.resx">
+      <DependentUpon>FormSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormViwerHistoric.resx">
+      <DependentUpon>FormViwerHistoric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Servent.BLL\Servent.BLL.csproj">
+      <Project>{6ec80244-9010-4b6f-b585-c75127cf6bad}</Project>
+      <Name>Servent.BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servent.DAL\Servent.DAL.csproj">
+      <Project>{ad0bbcd5-20b3-4be4-98e0-272a7a40b3b8}</Project>
+      <Name>Servent.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servent.Domain\Servent.Domain.csproj">
+      <Project>{f60aea30-723a-4a95-95d2-bbcb162f5989}</Project>
+      <Name>Servent.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servent.Util\Servent.Util.csproj">
+      <Project>{9a923901-0eb7-4d4b-8aea-3b41c0bed7a7}</Project>
+      <Name>Servent.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adicionar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\01b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\02b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\03b.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unidades de medida.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1382750462_cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1382750732_519584-081_Pen.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1382750997_519691-199_CircledPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1382751000_90.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="construction_firm.ico" />
+    <None Include="Resources\1743374_476342642477666_1435734698_n.jpg" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\construcao-e-reformas.jpg" />
+    <None Include="Resources\splahScreenTemp.jpg" />
+    <None Include="Resources\server1.png" />
+    <None Include="Resources\server.png" />
+    <None Include="Resources\1383971288_old-edit-find.png" />
+    <None Include="Resources\addMat.png" />
+    <None Include="Resources\residential_construction_256.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
